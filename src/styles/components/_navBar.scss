@@ -1,0 +1,120 @@
+.navBarContainer {
+	height: 70px;
+	width: 100%;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 20;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(189, 189, 189, 1);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(189, 189, 189, 1);
+	box-shadow: 0px 0px 30px 0px rgba(189, 189, 189, 1);
+	position: fixed;
+	flex-wrap: nowrap;
+}
+.logoContainer {
+	padding: 0;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: white;
+	max-width: 300px;
+	position: relative;
+	text-align: center;
+	flex: 1 0 65%;
+	a {
+		display: inline-block;
+		text-align: center;
+		padding: 0 10px;
+	}
+}
+.logoMentallyFit {
+	width: 100%;
+	max-width: 270px;
+}
+.navbarItems {
+	background-color: $blue-second-color !important;
+      // background-color: green !important;
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0;
+	flex: 1 0 25%;
+	position: relative;
+	.version-app {
+		position: absolute;
+		bottom: 3px;
+		left: 3px;
+		color: #fff;
+		font-size: 10px;
+		margin: 0;
+	}
+	.userNavBar {
+		text-decoration: none;
+		margin-right: 4vw;
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+	}
+	.userName {
+		@include font-text-bold;
+		font-size: 11px !important;
+		color: white;
+		line-height: 18px;
+		display: none;
+	}
+	.userIcon {
+		margin-right: 5px;
+		width: 30px;
+	}
+}
+
+/*
+
+  Responsive
+
+*/
+@media (max-width: 600px) {
+}
+@media (min-width: 600px) {
+	.navbarItems {
+		.userName {
+			display: block;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.navbarItems {
+		flex: 1 0 70%;
+		.userIcon {
+			width: auto;
+		}
+		.userName {
+			font-size: 14px !important;
+		}
+	}
+	.logoContainer {
+		flex: 1 0 30%;
+	}
+}
+@media (min-width: 992px) {
+	.navBarContainer {
+		height: 100px;
+	}
+	.navbarItems {
+		.userIcon {
+			margin-right: 30px;
+		}
+		.userName {
+			font-size: 15px !important;
+			line-height: 18px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1440px) {
+}
+@media (min-width: 1600px) {
+}

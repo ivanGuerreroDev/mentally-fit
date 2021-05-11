@@ -1,0 +1,105 @@
+.login-form-home {
+      background-color: #ffffff;
+      box-shadow: 15px 14px 21px rgba(68, 84, 106, 0.09);
+      border-radius: 10px;
+      width: 600px;
+	  height: 600px;
+	  max-width: 100%;
+      display: flex;
+flex-shrink: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+	  z-index: 20;
+	  @media (max-width: 1200px) {
+		max-width: 100%;
+		max-height: 450px;
+	  }
+      input {
+            width: 70%;
+            border-radius: 5px;
+            border: 1px solid #d8d5e0;
+            background-color: #fdfdfc;
+            margin-bottom: 30px;
+            padding-left: 2px;
+            outline: none;
+      }
+      img {
+            &.error-login {
+                  width: 35px;
+                  position: relative;
+                  top: -285px;
+                  left: 235px;
+                  &.not-view {
+                        display: none !important;
+                  }
+            }
+      }
+      label {
+            color: #44546a;
+            @include font-text-light;
+            width: 65%;
+            margin-bottom: 5px;
+            &.error-login {
+                  width: 70%;
+                  text-align: center;
+                  @include font-text-bold;
+                  color: $error-color;
+                  &.not-view {
+                        display: none !important;
+                  }
+            }
+      }
+      a {
+            color: #44546a;
+            text-decoration: none;
+            margin-bottom: 25px;
+            @include font-text-light;
+            &:hover {
+                  color: $blue-second-color;
+            }
+      }
+      .view-reset{
+            width: 70%;
+            text-align: center;
+            @include font-text-bold;
+            font-size: 20px !important;
+            color: $blue-second-color;
+            &.not-view{
+                  display: none !important;
+            }
+      }
+      .send-email{
+            width: 70%;
+            text-align: center;
+            @include font-text-bold;
+            font-size: 20px !important;
+            color: $blue-second-color;
+            &.not-view{
+                  display: none !important;
+            }
+      }
+}
+.login-form-title {
+      width: 100%;
+      margin-bottom: 50px !important; 
+      color: #099baa !important;
+      @include font-title;
+      text-align: center !important;
+}
+.button-to-login {
+      background-color: $orange-primary-color !important;
+      border: none !important;
+      color: white;
+      @include font-text-button;
+      width: 203px !important;
+      height: 43px !important;
+      border-radius: 22px !important;
+      margin-top: 30px;
+      transition: 0.3s;
+      outline: none !important;
+      &:hover {
+            transition: 0.3s;
+            background-color: $blue-second-color !important;
+      }
+}

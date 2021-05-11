@@ -1,0 +1,276 @@
+.formulario-participante-container {
+      width: 100%;
+      
+      .nombre-boton-volver {
+            width: 100%;
+            height: 68px;
+            border-radius: 10px;
+            display: flex;
+flex-shrink: 0;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .texto-formulario-participante {
+                  @include font-title;
+                  color: #099baa;
+                  font-size: 37px !important;
+            }
+            div {
+                  width: 146px;
+                  height: 68px;
+                  box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07);
+                  border-radius: 10px;
+                  background-color: #ffffff;
+                  display: flex;
+flex-shrink: 0;
+                  justify-content: space-evenly;
+                  align-items: center;
+                  padding: 20px;
+                  .texto-boton-volver {
+                        color: #ff6d00;
+                        @include font-text-bold;
+                        font-size: 18px !important;
+                        line-height: 16.8px;
+                  }
+                  img {
+                        width: 18px;
+                        height: 18px;
+                  }
+            }
+      }
+      .formulario-agregar-admin {
+            width: 100%;
+            height: 610px;
+            box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07);
+            border-radius: 10px;
+            background-color: #ffffff;
+            .formulario-inputs-container {
+                  display: flex;
+flex-shrink: 0;
+                  padding: 50px;
+                  width: 100%;
+                  .inputs-formulario {
+                        width: 65%;
+                        margin-right: 5%;
+                        display: flex;
+flex-shrink: 0;
+                        flex-direction: column;
+                        .medios-inputs {
+                              display: flex;
+flex-shrink: 0;
+                              flex-direction: column;
+                              height: 50%;
+                              justify-content: space-around;
+                              .dos-inputs {
+                                    // display: flex;
+flex-shrink: 0;
+                                    // height: 100%;
+                                    .input-left {
+                                          display: flex;
+flex-shrink: 0;
+                                          // flex-direction: column;
+                                          width: 100%;
+                                          div {
+                                                display: flex;
+flex-shrink: 0;
+                                                flex-direction: column;
+                                                justify-content: space-between;
+                                                width: 50%;
+                                                label {
+                                                      color: #44546a;
+                                                      font-size: 16px !important;
+                                                      @include font-text-light;
+                                                }
+                                                input {
+                                                      padding-left: 1vw;
+                                                      width: 90%;
+                                                      height: 41px;
+                                                      border-radius: 5px;
+                                                      border: 1px solid #d8d5e0;
+                                                      background-color: #fdfdfc;
+                                                      &.error {
+                                                            border: solid 3px red !important;
+                                                      }
+                                                
+                                                }
+                                                select {
+                                                      padding-left: 1vw;
+                                                      width: 90%;
+                                                      height: 41px;
+                                                      border-radius: 5px;
+                                                      border: 1px solid #d8d5e0;
+                                                      background-color: #fdfdfc;
+                                                      color: #44546a;
+                                                      font-size: 16px !important;
+                                                      @include font-text-light;
+                                                      &.error {
+                                                            border: solid 3px red !important;
+                                                      }
+                                                }
+                                          }
+                                    }
+                                    .input-right {
+                                          display: flex;
+flex-shrink: 0;
+                                          flex-direction: column;
+                                          justify-content: space-around;
+                                          width: 100%;
+                                          margin-top: 15px;
+                                          label {
+                                                color: #44546a;
+                                                font-size: 16px !important;
+                                                @include font-text-light;
+                                          }
+                                          input {
+                                                padding-left: 1vw;
+                                                width: 100%;
+                                                height: 41px;
+                                                border-radius: 5px;
+                                                border: 1px solid #d8d5e0;
+                                                background-color: #fdfdfc;
+                                                &.error {
+                                                      border: solid 3px red !important;
+                                                }
+                                          }
+                                          select {
+                                                padding-left: 1vw;
+                                                width: 90%;
+                                                height: 41px;
+                                                border-radius: 5px;
+                                                border: 1px solid #d8d5e0;
+                                                background-color: #fdfdfc;
+                                                color: #44546a;
+                                                font-size: 16px !important;
+                                                @include font-text-light;
+                                                &.error {
+                                                      border: solid 3px red !important;
+                                                }
+                                          }
+                                    }
+                              }
+                              .input-tres-completo {
+                                    display: flex;
+flex-shrink: 0;
+                                    // flex-direction: column;
+                                    width: 100%;
+                                    div {
+                                          display: flex;
+flex-shrink: 0;
+                                          flex-direction: column;
+                                          justify-content: space-between;
+                                          width: 50%;
+                                          label {
+                                                color: #44546a;
+                                                font-size: 16px !important;
+                                                @include font-text-light;
+                                          }
+                                          input {
+                                                padding-left: 1vw;
+                                                width: 90%;
+                                                height: 41px;
+                                                border-radius: 5px;
+                                                border: 1px solid #d8d5e0;
+                                                background-color: #fdfdfc;
+                                                &.error {
+                                                      border: solid 3px red !important;
+                                                }
+                                          }
+                                          select {
+                                                padding-left: 1vw;
+                                                width: 90%;
+                                                height: 41px;
+                                                border-radius: 5px;
+                                                border: 1px solid #d8d5e0;
+                                                background-color: #fdfdfc;
+                                                color: #44546a;
+                                                font-size: 16px !important;
+                                                @include font-text-light;
+                                                &.error {
+                                                      border: solid 3px red !important;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                        .input-completo {
+                              display: flex;
+flex-shrink: 0;
+                              margin-top: 5px;
+                              flex-direction: column;
+                              label {
+                                    color: #44546a;
+                                    font-size: 16px !important;
+                                    @include font-text-light;
+                                    margin-bottom: 5px;
+                              }
+                              textarea {
+                                    width: 100%;
+                                    outline: none;
+                                    height: 88px;
+                                    border-radius: 5px;
+                                    border: 1px solid #d8d5e0;
+                                    background-color: #fdfdfc;
+							  }
+							input {
+								width: 85.5%;
+								outline: none;
+								height: 41px;
+								border-radius: 5px;
+								border: 1px solid #d8d5e0;
+								background-color: #fdfdfc;
+							}
+                        }
+                  }
+                  .imagen-formulario {
+                        img {
+                              height: 506px !important;
+                        }
+                  }
+            }
+            .botones {
+                  align-self: flex-start;
+                  width: 100%;
+                  display: flex;
+flex-shrink: 0;
+                  position: relative;
+                  bottom: -60px;
+                  justify-content: flex-end;
+
+                  .boton-crear {
+                        margin-left: 50px;
+                        background-color: $orange-primary-color !important;
+                        border: none !important;
+                        color: white;
+                        @include font-text-button;
+                        width: 180px !important;
+                        height: 43px !important;
+                        border-radius: 22px !important;
+                        transition: 0.3s;
+                        outline: none !important;
+                        &:hover {
+                              transition: 0.3s;
+                              background-color: $blue-second-color !important;
+                        }
+                  }
+                  .boton-importar {
+                        background-color: transparent !important;
+                        border: $orange-primary-color 2px solid !important;
+                        @include font-text-button;
+                        width: 180px;
+                        height: 43px !important;
+                        border-radius: 22px !important;
+                        transition: 0.3s;
+                        outline: none !important;
+                        color: $orange-primary-color;
+                        display: flex;
+flex-shrink: 0;
+                        align-items: center;
+                        justify-content: space-around;
+                        &:hover {
+                              transition: 0.3s;
+                              border: $blue-second-color solid 2px !important;
+                              color: $blue-second-color !important;
+                        }
+                  }
+            }
+      }
+}

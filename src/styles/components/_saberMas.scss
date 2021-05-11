@@ -1,0 +1,117 @@
+.componente-saber-mas {
+      display: block;
+      &.orina{
+            .opciones-orina {
+                  justify-content: space-around;
+                  button {
+                        /* Style for "Trazado 40" */
+                        width: 10vw;
+                        height: 30px;
+                        border: none;
+                        margin-right: 15px;
+                        &.primero{
+                              background-color: #f9f8e5;
+                        }
+                        &.segundo{
+                              background-color: #f6f2c5;
+                        }
+                        &.tercero{
+                              background-color: #f4ed95;
+                        }
+                        &.cuarto{
+                              background: linear-gradient(90deg, rgba(240,212,17,1) 0%, rgba(229,194,6,1) 80%);
+                        }
+                        &.quinto{
+                              background: linear-gradient(90deg, rgba(219,176,1,1) 0%, rgba(143,136,29,1) 80%);
+                        }
+                  }
+                  @media (max-width: 1475px) {
+                        display: flex;
+flex-shrink: 0;
+                        flex-direction: column;
+                        button{
+                              margin-bottom: 10px
+                        }     
+                  }
+            }
+      }
+      .opciones {
+            button {
+                  @include font-text-light;
+                  font-size: 14px !important;
+                  width: 92px;
+                  height: 30px;
+                  border: 1px solid #dbe2eb;
+                  background-color: rgba(239, 243, 248, 0.68);
+                  &.first {
+                        border-bottom-left-radius: 10px;
+                        border-top-left-radius: 10px;
+                  }
+                  &.last {
+                        border-bottom-right-radius: 10px;
+                        border-top-right-radius: 10px;
+                  }
+                  &.true {
+                        background-color: rgba(207, 207, 207, 0.68);
+                  }
+                  &.false {
+                        background-color: rgba(239, 243, 248, 0.68);
+                  }
+            }
+      }
+      .colores {
+            &.orina{
+                  display: flex;
+flex-shrink: 0;
+                  flex-direction: row;
+                  span{
+                        width: 20%;
+                        text-align: center;
+                        @include font-text-light;
+                  }
+                  @media (max-width: 1475px) {
+                        display: flex;
+flex-shrink: 0;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        margin-left: 15px;
+                          
+                  }
+            }
+            button {
+                  cursor: auto;
+                  width: 92px;
+                  height: 9px;
+                  border: 1px solid #dbe2eb;
+                  &.red {
+                        background-color: #d50032;
+                  }
+                  &.orange {
+                        background-color: #ff6d00;
+                  }
+                  &.green {
+                        background-color: #47d7ac;
+                  }
+            }
+      }
+      @media (max-width: 1475px) {
+            display: flex !important;
+            justify-content: center;
+            .opciones {
+                  display: flex !important;
+                  flex-direction: column;
+                  button {
+                        border-radius: 0 !important;
+                  }
+            }
+            .colores {
+                  display: flex !important;
+                  flex-direction: column;
+                  button {
+                        height: 30px;
+                        margin-left: 40px;
+                  }
+            }
+      }
+      
+}

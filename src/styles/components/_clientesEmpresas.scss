@@ -1,0 +1,134 @@
+.clientes-empresas-container {
+      @media only screen and (max-width: 800px) {
+            text-align: center !important;
+      }
+      .title{
+      }
+	.menu-lista-empresas {
+		width: 100%;
+		height: 117px;
+		box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07);
+		border-radius: 10px;
+		background-color: #ffffff;
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		@media (max-width: 1200px) {
+			height: auto;
+		}
+		@media (max-width: 760px) {
+			flex-direction: column !important;
+			justify-content: center;
+			padding-bottom: 15px;
+			padding-top: 15px;
+		}
+
+		.boton-contenedor{
+			@media (max-width: 1400px) {
+				width: 140px !important;
+				font-size: 15px !important;
+			}
+		}
+		.informacion-contenedor {
+			height: 100%;
+			width: 80%;
+			display: flex;
+			flex-shrink: 0;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			@media (max-width: 1200px) {
+				flex-wrap: nowrap !important;
+				flex-direction: column !important;
+				align-items: flex-start;
+				padding-left: 30px;
+			}
+			@media (max-width: 760px) {
+				padding-left: 0;
+			}
+			div {
+				height: 45%;
+				width: 45%;
+				text-align: left;
+				display: flex;
+				flex-shrink: 0;
+				align-items: center;
+				color: #44546a;
+				@include font-text-light;
+				font-size: 18px !important;
+				line-height: 37px;
+				label {
+					width: 65%;
+				}
+				.numero {
+					width: 10%;
+					font-weight: 900 !important;
+					justify-content: flex-end;
+				}
+				@media (max-width: 1525px) {
+					font-size: 16px !important;
+				}
+				@media (max-width: 1400px) {
+					font-size: 12px !important;
+					.numero{
+						font-size: 12px !important;
+					}
+				}
+				@media (max-width: 1200px) {
+					width: 100%;
+				}
+				@media (max-width: 760px) {
+					justify-content: space-evenly;
+				}
+
+
+
+				@media (min-width: 992px) {
+					.page-container {
+						padding: 40px 70px;
+					}
+				}
+				@media (min-width: 1200px) {
+					.page-container {
+						padding: 50px 80px;
+					}
+				}
+				@media (min-width: 1440px) {
+					.page-container {
+						padding: 50px 100px;
+					}
+				}
+				
+			}
+		}
+	}
+	.search-bar {
+		width: 100%;
+		height: 90px;
+		margin-top: 30px;
+		box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07);
+		border-radius: 10px;
+		background-color: #ffffff;
+		form {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-shrink: 0;
+			justify-content: center;
+			align-items: center;
+			input {
+				width: 100%;
+				height: 46px;
+				border-radius: 5px;
+				background-color: #eff3f8;
+				border: none;
+				padding-left: 25px;
+				color: #44546a;
+				@include font-text-light;
+				font-size: 18px !important;
+				line-height: 21.6px;
+				text-align: left;
+			}
+		}
+	}
+}

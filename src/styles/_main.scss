@@ -1,0 +1,27 @@
+.react-toast-notifications__container{
+    bottom: 0; top:initial !important;
+}
+a{
+	cursor: pointer;
+}
+#imprimir-pdf-testing{
+    background-color: aqua !important;
+    display: none !important;
+    visibility: hidden;
+}
+.testing-alala{
+    background-color: green
+}
+#canvasPersonal{
+    display: flex !important;
+    border: none !important;
+}
+#canvasBehavior{
+    display: flex !important;
+    border: none !important;
+}
+@import './variables/variables-index';
+@import './components/components-index';
+@import './views/views-index';
+@import './views/viewEmpresas';
+

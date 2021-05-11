@@ -1,0 +1,92 @@
+.ListadoCampañasContainer {
+      display: flex;
+flex-shrink: 0;
+      flex-direction: column;
+      .titulo {
+            @include font-text-bold;
+			font-size: 25px !important;
+			
+	  }
+	  .duracion{
+		font-size: 16px;
+		color: #333;
+		line-height: 1.1;
+		clear: both;
+		span{
+			color: $orange-primary-color;
+			font-weight: 700;
+		}
+	}
+      .campaña-user-container {
+            width: 100%;
+            
+            box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07);
+            border-radius: 10px;
+            background-color: #ffffff;
+            display: flex;
+flex-shrink: 0;
+            padding: 25px;
+            margin-top: 50px;
+            .imagen-container {
+                  width: 15%;
+                  display: flex;
+flex-shrink: 0;
+                  justify-content: center;
+                  img, svg {
+                        width: 100px;
+                        height: 100px;
+                  }
+            }
+            .titulo-texto-container {
+                  width: 65%;
+                  display: flex;
+flex-shrink: 0;
+                  flex-direction: column;
+                  .titulo {
+                        @include font-title;
+                        color: #099baa;
+                        font-size: 37px !important;
+                  }
+                  .descripcion {
+                        @include font-text-light;
+                        font-size: 15px !important;
+						margin-top: 15px;
+						text-align: justify;
+                  }
+            }
+            .progreso-boton-container {
+                  width: 20%;
+                  padding-right: 25px;
+                  display: flex;
+flex-shrink: 0;
+                  flex-direction: column;
+				  align-items:flex-end;
+				  justify-content:space-between;
+                  .progreso {
+                        width: 25px;
+                        align-self: flex-end;
+                        opacity: 0.2;
+                        &.terminado{
+                              opacity: 1;
+                        }
+                  }
+            }
+	  }
+	  @media (max-width: 700px){
+		  .campaña-user-container{
+			  flex-wrap: wrap;
+			  .imagen-container{
+				  width: 100%;
+			  }
+			  .titulo-texto-container{
+				width: 100%;
+			  }
+			  .progreso-boton-container{
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+				padding-right: 0;
+			  }
+		  }
+	  }
+}

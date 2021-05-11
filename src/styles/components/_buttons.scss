@@ -1,0 +1,52 @@
+.button-primary {
+    background-color: $orange-primary-color !important;
+    border: none !important;
+    color: white;
+    @include font-text-button;
+    padding: 12px 30px !important;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 22px !important;
+    transition: all ease-out 0.2s;
+    outline: none !important;
+    path,g,svg {fill: white !important; transition: all ease-out 0.2s; margin-right: 10px;}
+    &:hover {
+          background-color: $blue-second-color !important;
+    }
+}
+
+.button-secondary {
+    background-color: transparent!important;
+    border: 1px solid $orange-primary-color !important;
+    color: $orange-primary-color;
+    @include font-text-button;
+    padding: 12px 30px !important;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 22px !important;
+    transition: all ease-out 0.2s;
+    outline: none !important;
+    path,g,svg {fill: $orange-primary-color !important; transition: all ease-out 0.2s; margin-right: 10px;}
+    &:hover {
+          border:  1px solid $blue-second-color !important;
+          color: $blue-second-color;
+          path,g,svg {fill: $blue-second-color !important;}
+    }
+}
+
+.button-disabled{
+	background-color: $disabled-color !important;
+    border: none !important;
+    color: white;
+    @include font-text-button;
+    padding: 12px 30px !important;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 22px !important;
+    transition: all ease-out 0.2s;
+    outline: none !important;
+    path,g,svg {fill: white !important; transition: all ease-out 0.2s; margin-right: 10px;}
+    &:hover {
+          background-color: $disabled-color !important;
+    }
+}

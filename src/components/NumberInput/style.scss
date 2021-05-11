@@ -1,0 +1,39 @@
+.numberInput {
+    display: flex;
+flex-shrink: 0;
+    align-items: center;
+	overflow: hidden;
+	flex: 1;
+	margin-top: 15px;
+	width: 276px;
+	height: 38px;
+	border-radius: 5px;
+	border: 1px solid #d8d5e0;
+	background-color: #fdfdfc;
+
+    input {
+        flex: 1;
+        height: 100%;
+        align-items: center;
+        display: flex;
+flex-shrink: 0;
+        padding: 6px;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    select {
+        width: 50px;
+        height: 100%;
+        border-top: 0;
+        border-left: 1px solid #cccccc;
+        border-bottom: 0;
+        border-right: 0;
+        -webkit-appearance: none;
+        border-radius: 0;
+        background-color: #fff;
+        padding: 6px;
+        outline: none;
+    }
+}

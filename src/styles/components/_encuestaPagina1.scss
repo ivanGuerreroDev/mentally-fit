@@ -1,0 +1,207 @@
+.resaltado {
+	font-weight: 500;
+	color: $blue-second-color !important;
+}
+.encuesta-pagina-1 {
+	width: 100%;
+
+	box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07);
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding: 30px 50px;
+	margin-bottom: 50px;
+	.texto-extra {
+		color: #44546a;
+		@include font-text-bold;
+		font-weight: 500 !important;
+		font-size: 16px !important;
+		text-align: left;
+		.resaltado-black {
+			font-weight: 500;
+		}
+	}
+	.titulo-encuesta {
+		color: #ff6d00;
+		@include font-title;
+		font-size: 30px !important;
+		margin-bottom: 25px;
+
+		p {
+			text-align: justify;
+		}
+	}
+	.texto-descripcion-titulo {
+		color: #44546a;
+		@include font-text-bold;
+		font-weight: 400 !important;
+		font-size: 14px !important;
+		text-align: left;
+		.resaltado-black {
+			font-weight: 500;
+		}
+	}
+	.titulo-pregunta {
+		@include font-text-bold;
+		color: #44546a;
+		font-size: 25px !important;
+		margin-bottom: 25px;
+		.cuadrado-pregunta {
+			width: 9px;
+			height: 20px;
+			background-color: #47d7ac;
+			align-self: center;
+			margin-right: 15px;
+		}
+	}
+	.encuesta-pregunta {
+		text-align: justify;
+		.inputs-container {
+			.input-label {
+				label {
+					@include font-text-bold;
+					font-size: 12px !important;
+					margin-bottom: 10px;
+					color: #44546a;
+				}
+				input {
+					/* Style for "Rectángulo" */
+					width: 276px;
+					height: 38px;
+					border-radius: 5px;
+					border: 1px solid #d8d5e0;
+					background-color: #fdfdfc;
+				}
+			}
+		}
+		p {
+			@include font-text-bold;
+			font-size: 16px !important;
+			color: #44546a;
+		}
+		.pregunta {
+			color: #44546a;
+			@include font-text-light;
+			font-weight: 400 !important;
+			font-size: 14px !important;
+			text-align: left;
+			margin-bottom: 25px;
+			text-align: justify;
+			.texto-input {
+				margin-top: 180px;
+			}
+			.resaltado {
+				font-weight: 500;
+				font-size: 16px !important;
+				color: $blue-second-color;
+			}
+			.resaltado-titulo {
+				font-weight: 600;
+				font-size: 19px !important;
+				color: $blue-second-color;
+			}
+			.resaltado-black {
+				font-weight: 500;
+			}
+			.numberInput__18GrJ {
+				display: flex;
+				flex-shrink: 0;
+				align-items: center;
+				overflow: hidden;
+				flex: 1;
+				margin-top: 15px;
+				width: 276px;
+				height: 38px;
+				border-radius: 5px;
+				border: 1px solid #d8d5e0;
+				background-color: #fdfdfc;
+				text-align: justify;
+				input {
+					flex: 1;
+					height: 100%;
+					align-items: center;
+					display: flex;
+					flex-shrink: 0;
+					padding: 6px;
+					outline: none;
+					border: none;
+					box-sizing: border-box;
+				}
+
+				select {
+					width: 50px;
+					height: 100%;
+					border-top: 0;
+					border-left: 1px solid #cccccc;
+					border-bottom: 0;
+					border-right: 0;
+					-webkit-appearance: none;
+					border-radius: 0;
+					background-color: #fff;
+					padding: 6px;
+					outline: none;
+				}
+			}
+		}
+		ul {
+			li {
+				@include font-text-light;
+				font-size: 17px !important;
+				color: #47d7ac !important;
+				span {
+					color: #44546a;
+				}
+			}
+		}
+		span {
+			text-align: justify;
+		}
+	}
+	.opciones-preguntas {
+		margin-left: 25px;
+		margin-bottom: 25px;
+		justify-content: space-between;
+		.form-check {
+			.img-option {
+				width: calc(100% - 20px);
+				border: 4px solid #f4f4f4;
+				&.activo {
+					border: 4px solid $blue-second-color;
+				}
+			}
+		}
+		.form-check-input {
+			&.hidden {
+				height: 0;
+				width: 0;
+				position: absolute;
+				padding: 0;
+				margin: 0;
+				opacity: 0;
+			}
+		}
+		div {
+			label {
+				@include font-text-light;
+				color: #44546a;
+				font-size: 14px !important;
+			}
+			input {
+				&:checked {
+					background-color: #ff6d00 !important;
+					border-color: #ff6d00 !important;
+					background-image: none !important;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 700px) {
+		padding: 30px 20px;
+	}
+	@media (max-width: 1200px) {
+		.opciones-preguntas {
+			justify-content: flex-start;
+			flex-wrap: wrap;
+		}
+	}
+}

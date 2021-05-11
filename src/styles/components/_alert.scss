@@ -1,0 +1,16 @@
+.react-confirm-alert-body {
+    width: 100%;
+    max-width: 600px;
+    & > h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+.react-confirm-alert-button-group{
+    & > button{
+        background: #939393;
+        &:last-child{
+            background: #339CAA;
+        }
+    }
+}

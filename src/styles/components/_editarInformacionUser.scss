@@ -1,0 +1,182 @@
+.perfil-container {
+      margin-top: 50px;
+      
+      padding-bottom: 50px;
+      box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07);
+      border-radius: 10px;
+      background-color: #ffffff;
+      display: flex;
+flex-shrink: 0;
+      .imagen-container {
+            width: 25%;
+            .imagen-perfil {
+                  width: 100%;
+                  padding: 50px 0 0 75px;
+                  
+				  display: flex;
+flex-shrink: 0;
+				  justify-content: center;
+				  @media (max-width: 1200px) {
+					padding: 50px 15px 0 15px;
+				}
+                  img {
+                        width: 50%;
+                  }
+                  .button-eliminar {
+                        width: 20px !important;
+                        height: 20px;
+                        align-self: flex-end;
+                        margin-left: 25px;
+                        cursor: pointer;
+                  }
+            }
+            .perfil-login-name {
+				text-align: center;
+                  &.foto {
+                        cursor: pointer;
+                        margin-top: 25px;
+                        input {
+                              display: none;
+                        }
+                  }
+                  // cursor: pointer;
+				  padding: 50px 0 0 75px;
+				  @media (max-width: 1200px) {
+					padding: 50px 15px 0 15px;
+				  }
+                  img {
+                        width: 20px;
+                        height: 20px;
+                        margin-bottom: 5px;
+                  }
+                  span {
+                        @include font-text-bold;
+                        font-size: 20px !important;
+                        color: #ff6d00;
+                  }
+            }
+      }
+
+      .informacion-container {
+            width: 100%;
+            .texto-boton {
+                  display: flex;
+					flex-shrink: 0;
+				  padding: 50px 25px 0 80px;
+				  @media (max-width: 1200px) {
+					padding: 50px 15px 0 15px;
+					flex-wrap: wrap;
+				}
+                  .texto-container {
+                        width: 60%;
+                        display: flex;
+						flex-shrink: 0;
+						flex-direction: column;
+						@media (max-width: 1200px) {
+							width: 100%;
+						}
+                        .titulo {
+                              color: #099baa !important;
+                              @include font-text-bold;
+                              font-size: 30px !important;
+                        }
+                        .informacion {
+                              margin-top: 25px;
+                              color: rgb(71, 71, 71);
+                              @include font-text-light;
+                              font-size: 18px !important;
+                        }
+                  }
+                  .button-container {
+                        width: 40%;
+                        display: flex;
+flex-shrink: 0;
+						justify-content: flex-end;
+						@media (max-width: 1200px) {
+							width: 100%;
+							}
+                        button {
+                              margin-right: 50px;
+                              background-color: $orange-primary-color !important;
+                              border: none !important;
+                              color: white;
+                              @include font-text-button;
+                              width: 200px !important;
+                              height: 43px !important;
+                              border-radius: 22px !important;
+                              transition: 0.3s;
+                              outline: none !important;
+                              &:hover {
+                                    transition: 0.3s;
+                                    background-color: $blue-second-color !important;
+                              }
+                        }
+                  }
+            }
+            .edit-infor {
+                  form {
+                        padding: 50px 100px 0 100px;
+                        display: flex;
+flex-shrink: 0;
+						flex-direction: column;
+						@media (max-width: 1200px) {
+							padding: 50px 15px 0 15px;
+						}
+                        div {
+                              display: flex;
+							  flex-shrink: 0;
+                              width: 100%;
+                              padding: 15px 0 0px 0;
+                              margin-right: 50px;
+							  // border-bottom: 1px solid rgb(207, 207, 207);
+							  @media (max-width: 767px) {
+								flex-wrap: wrap;
+								margin-right: 00px;
+								}
+							div 
+                              label {
+                                    color: rgb(71, 71, 71);
+                                    @include font-text-light;
+                                    font-size: 13px !important;
+                                    width: 30%;
+                                    align-self: center;
+                              }
+                              input, select {
+                                    /* Style for "Rectángulo" */
+                                    height: 41px;
+                                    width: 70%;
+                                    border-radius: 5px;
+                                    border: 1px solid #d8d5e0;
+                                    background-color: #fdfdfc;
+                              }
+                        }
+                  }
+                  .button-container {
+                        /* Style for "Rectángulo" */
+                        margin-top: 50px;
+                        text-align: end;
+						text-align: right;
+						@media (max-width: 1200px) {
+							text-align: center;
+						}
+                        button {
+							  margin-right: 50px;
+							  margin-bottom: 15px;
+                              background-color: $orange-primary-color !important;
+                              border: none !important;
+                              color: white;
+                              @include font-text-button;
+                              width: 200px !important;
+                              height: 43px !important;
+                              border-radius: 22px !important;
+                              transition: 0.3s;
+                              outline: none !important;
+                              &:hover {
+                                    transition: 0.3s;
+                                    background-color: $blue-second-color !important;
+                              }
+                        }
+                  }
+            }
+      }
+}

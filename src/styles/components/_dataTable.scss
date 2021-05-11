@@ -1,0 +1,275 @@
+.data-table-container {
+      background-color: transparent !important;
+      margin-top: 25px;
+		.MTableHeader-header-13{
+			z-index: initial;
+		}
+      div {
+            box-shadow: none !important;
+            div {
+                  &.MuiToolbar-root {
+                        
+                        &.MuiPaper-elevation2 {
+                              &.MuiPaper-rounded {
+                                    padding: 50px !important;
+                                    background: green !important;
+                                    .MuiTableCell-root{
+                                          &.MuiTableCell-head{
+                                                background-color: #ff6d00 !important;
+
+                                          }
+
+                                    } 
+                              }
+                        }
+                        &.MuiToolbar-regular {
+                              padding: 0 !important;
+                              display: flex;
+flex-shrink: 0;
+                              justify-content: center;
+                              background-color: #ffffff;
+                              margin-bottom: 25px;
+                              border-radius: 10px;
+                              box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07) !important;
+                              div {
+                                    display: none !important;
+                                    &.MTablePaginationInner-root-14 {
+                                          display: flex !important;
+                                          margin-left: auto;
+                                    }
+                                    &.MuiFormControl-root {
+                                          &.MuiTextField-root {
+                                                display: flex !important;
+                                          }
+                                    }
+                              }
+
+                              .MuiFormControl-root {
+                                    padding: 0 !important;
+                                    display: flex !important;
+                                    width: 100%;
+                                    div {
+                                          display: flex !important;
+                                          justify-content: center;
+                                          &:before {
+                                                display: none !important;
+                                          }
+                                          &:after {
+                                                display: none !important;
+                                          }
+                                          width: 100%;
+                                          input {
+                                                width: 100% !important;
+                                                margin: 0 15px;
+                                                padding-left: 15px !important;
+                                                background-color: #eff3f8;
+                                          }
+                                          div {
+                                                display: none !important;
+                                                span {
+                                                      display: none;
+                                                }
+                                                width: 50px !important;
+                                          }
+                                    }
+                              }
+                              &.MuiTablePagination-toolbar{
+                                    div{
+                                          display: flex !important;
+                                          &.MuiInputBase-root{
+                                                display: none !important;
+                                          }
+                                          // MuiTablePagination-input MuiTablePagination-selectRoot Component-paginationSelectRoot-18
+                                    }
+                              }
+
+                        }
+                  }
+                  .Component-horizontalScrollContainer-12 {
+                        padding: 15px;
+                        border-top-right-radius: 10 !important;
+                        border-top-left-radius: 10 !important;
+                        box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.07) !important;
+                        table {
+                              &.MuiTable-root {
+                                    background-color: white !important;
+                              }
+                              thead {
+                                    tr {
+                                          th {
+                                                background-color: #eff3f8;
+                                                border: 0 !important;
+                                                span{
+                                                      div{
+                                                           
+
+                                                      }
+
+                                                }
+                                          }
+                                    }
+                              }
+                              tbody {
+                                    .MuiInputBase-root {
+                                          display: flex !important;
+                                          &:before {
+                                                display: none;
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+      table {
+		thead, tbody{
+			tr{
+				td:last-child, th:last-child{
+					position: sticky; right: 0;
+					background-color: #fff;
+					-webkit-box-shadow: -5px 0px 5px -1px rgba(0,0,0,0.1);
+					-moz-box-shadow: -5px 0px 5px -1px rgba(0,0,0,0.1);
+					box-shadow: -5px 0px 5px -1px rgba(0,0,0,0.1);
+				}
+			}
+		}
+            tfoot {
+                  margin: 0 !important;
+                  tr {
+                        td {
+                              div {
+                                    border-top-right-radius: 0 !important;
+                                    border-top-left-radius: 0 !important;
+                              }
+                        }
+                  }
+            }
+      }
+
+	  &.fist-column-auto thead tr th{
+		  width: auto !important;
+	  }
+}
+
+.MuiButtonBase-root{
+      &.MuiTableSortLabel-root{
+            @include font-text-bold;
+            font-size: 18px !important;
+      }
+
+}
+
+
+.MuiInputBase-root {
+      &.MuiTablePagination-input {
+            .MuiTablePagination-selectRoot {
+                  div{
+                        display: flex !important;
+                  }
+            }
+      }
+}
+.MuiTableCell-root{
+      &.MuiTableCell-body{
+            &.MuiTableCell-alignLeft{
+                  @include font-text-light;
+                  font-size: 15px !important;
+            }
+
+      }
+
+}
+.MuiSelect-root {
+      .MuiSelect-select {
+            .MuiTablePagination-select {
+                  .MuiSelect-selectMenu {
+                        display: none !important;
+                        .MuiInputBase-input {
+                        }
+                  }
+            }
+      }
+      // display: none !important;
+}
+.acciones{
+      display:flex;
+      justify-content:flex-end
+}
+.data-table-action {
+      /* Style for "Ver" */
+      color: #ff6d00;
+      text-align: right;
+      @include font-text-bold;
+      font-size: 17px !important;
+      img {
+            margin-left: 10px;
+      }
+     
+      .icon-ver{
+            margin-right: 15px;
+      }
+}
+
+a {
+      text-decoration: none !important;
+}
+.MuiToolbar-root {
+      &.MuiToolbar-regular {
+            &.MTableToolbar-root-19 {
+                  &.MuiToolbar-gutters {
+                        div {
+                              display: none !important;
+                              &.MuiFormControl-root {
+                                    display: flex !important;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+.MTablePaginationInner-root-28{
+      display: flex !important;
+}
+
+.tableCheckboxes{
+	width: 100%;
+	thead{
+		tr{
+			th{
+				background-color: #eff3f8;
+				padding: 8px;
+				color: #000;
+				font-weight: 700;
+			}
+		}
+	}
+	tbody{
+		tr{
+			td{
+				padding: 8px;
+				border-top: 1px solid #cbcbcb;
+			}
+		}
+	}
+}
+#popover-listaDeOpciones{
+	z-index: 9999 !important;
+}
+.react-tiny-popover-container{
+	z-index: 9999;
+}
+.listaDeOpciones{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 9999;
+	a{
+		display: block;
+		padding: 5px 30px;
+		&:hover{
+			background-color: #D5FE05;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+html body #root {
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: 100vh !important;
+      width: 100% !important;
+}
+
+.loginPageContainer {
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("../../assets/loginBg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	&.forgot{
+		background-image: url("../../assets/forgotBg.png")
+	}
+}
+.sectionLeft {
+      
+      .login-recovery{
+            width: 550px;
+            position: relative;
+            top: 18vh;
+            left: 30%;
+      }
+      .login1 {
+            z-index: 20;
+            width: 600px;
+            position: relative;
+            left: 5vw;
+            top: 350px;
+      }
+      .login2 {
+            z-index: 10;
+            width: 600px;
+            position: relative;
+            top: -450px;
+            left: 4vw;
+      }
+}
+.sectionLoginForm {
+      height: 100vh;
+	  display: flex;
+flex-shrink: 0;
+	  margin-left: auto;
+      justify-content: center;
+      align-items: center;
+}
+

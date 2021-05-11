@@ -1,0 +1,99 @@
+.data-table-container {
+      &.participantes {
+            div {
+                  &.MuiPaper-root {
+                        &.MuiPaper-elevation2 {
+                              &.MuiPaper-rounded {
+                                    padding: 0 5px 0 5px;
+                                    .MuiToolbar-root {
+                                          &.MuiToolbar-regular {
+                                                box-shadow: none !important;
+                                                // display: none !important;
+                                                .MuiFormControl-root {
+                                                      &.MuiTextField-root {
+                                                            display: none !important;
+                                                      }
+                                                }
+                                          }
+                                    }
+                                    background-color: white !important;
+                                    table {
+                                          height: 50px !important;
+                                          tfoot {
+                                                height: 50px !important;
+                                                tr {
+                                                      td {
+                                                            div {
+                                                                  // display: block !important;
+                                                            }
+                                                      }
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+                  // MuiToolbar-regular MTableToolbar-root-5 MuiToolbar-gutters
+            }
+      }
+}
+
+.switch {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 17px;
+      margin-left: 5px;
+}
+
+.switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+}
+
+.slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+}
+
+.slider:before {
+      position: absolute;
+      content: "";
+      height: 13px;
+      width: 13px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+}
+
+input:checked + .slider {
+      background-color: #ff6d00;
+}
+
+input:checked + .slider:before {
+      -webkit-transform: translateX(13px);
+      -ms-transform: translateX(13px);
+      transform: translateX(13px);
+}
+
+.slider.round {
+      border-radius: 17px;
+}
+
+.slider.round:before {
+      border-radius: 50%;
+}
+
+.action-icono-participantes{
+      margin: 0px 10px 0px 10px;
+}
